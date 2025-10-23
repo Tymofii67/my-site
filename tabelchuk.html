@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Tabela</title>
+    <style>
+        td.gray-cell {
+            border-top: none;
+            border-bottom: none;
+        }
+        td.gray-cell:first-child {
+            border-top: 1px solid black;
+        }
+        td.gray-cell:last-child {
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+<body>
 
 <table border="1" cellspacing="0" cellpadding="5" align="center" width="1000">
   <tr bgcolor="#ff00ff">
     <th colspan="6" style="font-size:20px;">DANE KOMPUTEROWE–PROCESORY–TYMOFII KOVALCHUK_1P</th>
   </tr>
+
   <tr bgcolor="#ff0000">
     <th width="200">Model procesora</th>
     <th width="150">Taktowanie bazowe</th>
@@ -23,7 +38,7 @@
     <td>4</td>
     <td>6 MB</td>
     <td>65 W</td>
-    <td rowspan="4" bgcolor="#cccccc">Komputery stacjonarne</td>
+    <td rowspan="4" bgcolor="#cccccc" align="center" style="font-weight:bold;" class="gray-cell">Komputery stacjonarne</td>
   </tr>
 
   <tr bgcolor="#ffff00">
@@ -56,6 +71,7 @@
     <td>4</td>
     <td>18 MB</td>
     <td>65 W</td>
+    <td bgcolor="#cccccc" class="gray-cell"></td>
   </tr>
 
   <tr bgcolor="#9999ff">
@@ -64,21 +80,20 @@
     <td>6</td>
     <td>32 MB</td>
     <td>65 W</td>
+    <td bgcolor="#cccccc"
+class="gray-cell"></td>
   </tr>
-
-  <tr bgcolor="#ff00ff">
+<tr bgcolor="#ff00ff">
     <th colspan="6" style="font-size:18px;">Dane komputerowe</th>
   </tr>
 </table>
-
-</body>
-</html>
-
 
 <p><a href="index.html">Powrót do strony głównej</a></p>
 
 </body>
 </html>
+
+
 
 
 
